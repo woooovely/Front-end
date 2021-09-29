@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+        }
+        strong {
+            color: yellow;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = prompt("부서의 이름을 입력하세요. 1. 프로그램 개발 - 201호, 2. 경영 관리 - 202호, 3. 마케팅 - 203호");
+        switch(name) {
+            case "1":
+                document.write('프로그램 개발 부서는 <strong>201호</strong>입니다.');
+                break;
+            case "2":
+                document.write('경영 관리 부서는 <strong>202호</strong>입니다.');
+                break;
+            case "3":
+                document.write('마케팅 부서는 <strong>203호</strong>입니다.');
+                break;
+            default:
+                alert("유효하지 않는 부서입니다.");
+        }
+    </script>
+</body>
+</html>
